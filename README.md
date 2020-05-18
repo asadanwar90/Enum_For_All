@@ -367,6 +367,9 @@ smbmap.py -u username -p 'P@$$w0rd1234!' -d ABC -H $IP -x 'powershell -command "
 nmap -vv -sV -sU -Pn -p 161,162 --script=snmp-netstat,snmp-processes $IP
 
 snmp-check $IP -c public|private|community
+
+snmpwalk -v 2c -c public $ip
+
 ```
 ### LDAP - 389,636
 
